@@ -10,15 +10,15 @@ shinyUI(pageWithSidebar(
   ),
   
   mainPanel(
-    h4('Your Height [cm]'),
+    h5('Your Height [cm]'),
     verbatimTextOutput("oheight"),
-    h4('Your Weight [kg]'),
+    h5('Your Weight [kg]'),
     verbatimTextOutput("oweight"),
-    h2('BMI'),
+    h5('BMI'),
     verbatimTextOutput("oBMI"),
-    h4('Diagnose:'),
-    verbatimTextOutput("oPara")
-     
-
+    h5('Diagnose:'),
+    verbatimTextOutput("oPara"),
+    plotOutput("distPlot")
+   
   )
 ))
